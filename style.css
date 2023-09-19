@@ -274,6 +274,7 @@ footer a span{
     }
 }
 @media (max-width:481px) {
+    
     .container{
         width: 100%;
        
@@ -306,39 +307,421 @@ footer a span{
         width: 100%;
     }
     h1{
-        font-size: 9.4vw;
+        font-size: 17vw;
         padding: 3vw;
     }
     .join{
-        font-size: 3.8vw ;
+        font-size: 4vw ;
         padding: 3vw;
     }
     
     .update span{
-        font-size: 3.6vw;
+        font-size: 3.8vw;
         padding: 3vw;
     }
     .update{
         padding: 2vw;
     }
     .email{
-        font-size: 3.7vw;
+        font-size: 3.9vw;
+        padding: 3vw;
+    }
+    .required{
+        font-size: 3.9vw;
         padding: 3vw;
     }
     input{
-        width: 80vw; 
-        padding: 3vw;
-        margin: 3vw 3vw; 
-        font-size: 3.5vw;
+        width: 85vw; 
+        padding: 4vw;
+        margin: 5vw 3vw; 
+        font-size: 3.8vw;
     }
     :placeholder-shown{
-        font-size: 3.5vw;
+        font-size: 3.8vw;
     }
     .subscribe p{
-        padding: 4vw;
+        padding: 5vw;
         font-size: 3.5vw;
+        width: 85vw;
+        margin: 5vw 3vw;
+    }
+    .subscribe{
+        background-color: white;
+    }
+    
+}
+@media (max-width:481px) {
+    footer{
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+    .success{
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        border-radius: 0%;
+        
+    }
+    footer img{
+        margin-top: 35vw;
+        width: 10vw;
+        padding-left: 2vw;
+    }
+    footer a{
+        margin: 70% 0;
+    
+    }
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:hsl(234, 29%, 20%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+
+}
+form{
+    display: flex;
+    background-color: ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2%;
+    border-radius: 20px;
+    width: 60vw;
+}
+.left{
+    width: 50%;
+    padding-top: 2vw;
+    padding-left: 2vw;
+}
+h1{
+    text-align: left;
+    font-size: 4vw;
+    color:hsl(235, 18%, 26%) ;
+    padding-bottom: 0.8vw;
+}
+.join{
+    text-align: left;
+    color:hsl(235, 18%, 26%);
+    font-weight: 400;
+    font-size: 1.2vw;
+    margin: 2vw auto;
+}
+.update span{
+    margin-left: 0.6vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+.update{
+    margin: 1vw auto;
+    color: hsl(235, 18%, 26%);
+    
+}
+.valid{
+    display: flex;
+    justify-content: space-between;
+}
+.required{
+    color:red;
+    font-weight: 700;
+    font-size: 1.2vw;
+    margin-top: 1.3vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.5vw;
+}
+.email{
+    font-weight: 900;
+    font-size: 1.2vw;
+    margin-top: 1.3vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.5vw;
+}
+input{
+    width: 100%;
+    padding: 1vw;
+    border: 3px solid hsl(231, 7%, 60%);
+    margin-bottom: 1.4vw;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    color: hsl(235, 18%, 26%);
+    
+}
+:placeholder-shown{
+    font-size: 1.2vw;
+}
+.subscribe{
+    width: 100%;
+    border: transparent;
+    
+}
+.subscribe p{
+    color: white;
+    background-color: hsl(235, 18%, 26%);
+    padding: 1.2vw;
+    font-weight: 700;
+    font-size: 1.2vw;
+    border-radius: 10px;
+}
+.right{
+    width: 50%;
+    padding-left: 1.9vw;
+}
+.right img{
+    max-width: 100%;
+}
+footer{
+    position: absolute;
+    width: 350px;
+    
+}
+.success{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5%;
+    border-radius: 20px;
+}
+footer h2{
+    font-size: 3em;
+    text-align: left;
+    margin: 5% auto;
+
+}
+footer img{
+    width: 11%;
+}
+footer p{
+    font-size: 1.2em;
+}
+footer span{
+    font-weight: 600;
+}
+footer a{
+    text-decoration: none;
+    background-color: hsl(4, 100%, 67%);
+    color: white;
+    text-align: center;
+    padding: 4%;
+    margin-top: 4%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px hsl(4, 100%, 67%);
+}
+footer a span{
+    font-weight: 700;
+    font-size: 1.3em;
+    border-radius: 10px;
+    margin: 1% auto;
+}
+
+@media (max-width:1250px) {
+    .container{
+        width: 61vw;
+    }
+}
+@media (max-width:960px) {
+    .container{
+        width: 63vw;
+    }
+}
+@media (max-width:815px) {
+    .container{
+        width: 65vw;
+    }
+}
+@media (max-width:786px) {
+    .container{
         width: 80vw;
-        margin: 3vw 3vw;
+    }
+    h1{
+        font-size: 5vw;
+        margin-top: 2vw;
+    }
+    .join{
+        font-size: 1.7vw;
+        padding-right:0vw ;
+    }
+    .update span{
+        font-size: 1.6vw;
+    }
+    .email{
+        font-size: 1.7vw;
+        margin-top: 2vw;
+    }
+
+    input{
+    padding: 1vw;
+    border: 3px solid hsl(231, 7%, 60%);
+    margin-bottom: 1.4vw;
+    font-size: 1.8vw;
+    }
+
+    :placeholder-shown{
+        font-size: 1.8vw;
+    }
+    .subscribe p{
+    padding: 1.7vw;
+    font-weight: 700;
+    font-size: 1.8vw;
+    border-radius: 10px;
+    }
+}
+@media (max-width:576px){
+    .container{
+        width: 85vw;
+    }
+    h1{
+        font-size: 6vw;
+        margin-top: 2vw;
+    }
+    .join{
+        font-size: 1.8vw;
+        padding-right:0vw ;
+    }
+    .update span{
+        font-size: 1.7vw;
+    }
+    .email{
+        font-size: 1.7vw;
+        margin-top: 2vw;
+    }
+
+    input{
+    padding: 1vw;
+    border: 3px solid hsl(231, 7%, 60%);
+    margin-bottom: 1.6vw;
+    font-size: 1.9vw;
+    }
+
+    :placeholder-shown{
+        font-size: 1.9vw;
+    }
+    .subscribe p{
+    padding: 1.8vw;
+    font-weight: 700;
+    font-size: 1.9vw;
+    border-radius: 10px;
+    }
+
+}
+@media (max-width:505px) {
+    .container{
+        width: 95vw;
+    }
+    .update span,.join{
+        font-size: 1.9vw;
+    }
+    .email{
+        font-size: 2vw;
+    }
+    input{
+    padding: 1.6vw;
+    border: 3px solid hsl(231, 7%, 60%);
+    margin-bottom: 1.4vw;
+    font-size: 1.8vw;
+    }
+
+    :placeholder-shown{
+        font-size: 2.4vw;
+    }
+
+    .subscribe p{
+    padding: 2.5vw;
+    font-weight: 700;
+    font-size: 2vw;
+    border-radius: 10px;
+    }
+}
+@media (max-width:481px) {
+    
+    .container{
+        width: 100%;
+       
+        padding: 0;
+        margin: 0;
+        border-top-right-radius:0px ;
+        border-top-left-radius:0px ;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .right{
+        width: 100%;
+        padding: 0;
+        margin-top: 0%;
+    }
+    .right img{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .left{
+        padding: 4vw;
+        margin: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 17vw;
+        padding: 3vw;
+    }
+    .join{
+        font-size: 4vw ;
+        padding: 3vw;
+    }
+    
+    .update span{
+        font-size: 3.8vw;
+        padding: 3vw;
+    }
+    .update{
+        padding: 2vw;
+    }
+    .email{
+        font-size: 3.9vw;
+        padding: 3vw;
+    }
+    .required{
+        font-size: 3.9vw;
+        padding: 3vw;
+    }
+    input{
+        width: 85vw; 
+        padding: 4vw;
+        margin: 5vw 3vw; 
+        font-size: 3.8vw;
+    }
+    :placeholder-shown{
+        font-size: 3.8vw;
+    }
+    .subscribe p{
+        padding: 5vw;
+        font-size: 3.5vw;
+        width: 85vw;
+        margin: 5vw 3vw;
     }
     .subscribe{
         background-color: white;
